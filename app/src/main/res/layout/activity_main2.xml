@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="io.github.andylx96.sensorapp.Main2Activity">
+
+    <Button
+        android:text="Proximity Sensor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="110dp"
+        android:id="@+id/proxSensor" />
+
+    <Button
+        android:text="Accelerometer Sensor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/accelSensor"
+        android:layout_alignTop="@+id/proxSensor"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="52dp" />
+
+    <Button
+        android:text="Gyroscopic Sensor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gyroSensor"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Pressure Sensor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/proxSensor"
+        android:layout_alignParentStart="true"
+        android:id="@+id/pressureSensor" />
+
+    <Button
+        android:text="Magnetometer Sensor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pressureSensor"
+        android:layout_alignParentStart="true"
+        android:id="@+id/magnetSensor" />
+
+    <Button
+        android:text="Step Sensor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/magnetSensor"
+        android:layout_alignParentStart="true"
+        android:id="@+id/stepSensor" />
+
+</RelativeLayout>
